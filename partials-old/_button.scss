@@ -1,0 +1,51 @@
+// .bt {
+// 	padding: $bt_padding;
+// 	background: $bt_background;
+// 	border: $border-purple;
+// 	border-radius: $bt_border-radius;
+// 	color: #fff;
+// 	box-shadow: 0 2px 6px -1px #0000009c;
+// }
+
+@mixin bt-custom($bg, $border) {
+  background-color: $bg;
+  border: $border;
+  border-radius: $bt_border-radius;
+  color: #fff;
+  box-shadow: 0 2px 6px -1px #0000009c;
+  padding: $bt_padding;
+}
+.bt-blue {
+  @include bt-custom(blue, darkblue);
+}
+.bt-red {
+  @include bt-custom(red, rgb(53, 1, 1));
+}
+.bt-green {
+  @include bt-custom(rgb(25, 211, 68), rgb(7, 10, 8));
+}
+
+@each $key, $value in $colors {
+  .text-#{$key} {
+    color: $value;
+  }
+  .bg-#{$key} {
+    background-color: $value;
+  }
+}
+
+.bt-blue-light {
+  background-color: color.scale(map.get($colors, "yellow"), $lightness: -50%);
+  color: mix(white, blue, 80);
+}
+
+@each $key, $value in $colors {
+  @for $i from 1 through 9 {
+    .bg-#{$key}-dark-#{$i} {
+      background-color: mix(black, $value, $i * 10);
+    }
+    .bg-#{$key}-light-#{$i} {
+      background-color: mix(white, $value, $i * 10);
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.card {
+	border: $border-purple;
+	border-radius: $bt_border-radius;
+	.header {
+		padding: $bt_padding;
+		font-weight: map.get($font-weights, "bold");
+		background: $bt_background;
+		color: #fff;
+		i {
+			color: yellow;
+		}
+	}
+	.content {
+		padding: $bt_padding;
+		border-radius: $bt-border-radious2;
+	}
+	.content-title {
+		font-weight: map.get($font-weights, "bold");
+		
+	}
+}

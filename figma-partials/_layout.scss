@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "KittenBold";
+  font-style: normal;
+  font-weight: 400;
+  src: url(KittenBold.woff) format("woff");
+}
+.font-kitten {
+  font-family: "KittenBold";
+}
+
+.m-email {
+  margin: 0 36px;
+}
+.fs-1rem {
+  font-size: 1rem;
+}
+.punctajlayer {
+  border-radius: 40px 40px 0px 0px;
+  height: 75vh;
+  z-index: 1;
+}
+.z-index-2 {
+  z-index: 2;
+  transform: translateY(-110px);
+}
+.z-index-3 {
+  z-index: 3;
+}
+.fs-48px{
+  font-size: 48px;
+}
+.fs-32px{
+  font-size: 32px;
+}
+.color-card {
+  height: 58px;
+  width: 87px;
+ 
+box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.25);
+border-radius: 7px;
+}
+.bg-green {
+  background: rgba(15, 182, 101, 1);
+  
+}
+
+.bg-red {
+  background: #ff3D12;
+}

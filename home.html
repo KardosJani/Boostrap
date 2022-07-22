@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>bs project</title>
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+  <link href="main.css" rel="stylesheet" />
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="sticky-footer-layout vh-100">
+  <main>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-lg">
+        <a class="navbar-brand d-flex gap-2 fs-4" href="#">
+          <i class="bi bi-soundwave pe-1"></i>
+          Navbar
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5 mb-5 d-flex">
+      <button class="btn btn-primary">i am primary button</button>
+      <button class="btn btn-primary">i am another button</button>
+      <span class="flex-fill bg-danger">i am inline text</span>
+    </div>
+    <div class="container">
+      <div class="row g-3">
+        <div class="col">
+          <div>
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Default radio
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Default checked radio
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Default checked radio-1
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" />
+          </div>
+
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="d-flex  gap-3">
+        <button class="btn btn-success">buton1 </button>
+        <input class=" form-control " type="text">
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark px-4 py-3">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <span class="flex-fill text-white">Copyright Adina</span>
+        <div class="d-flex fs-3 gap-3">
+          <i class="bi bi-facebook text-primary"></i>
+          <i class="bi bi-instagram text-danger"></i>
+          <i class="bi bi-linkedin text-info"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
